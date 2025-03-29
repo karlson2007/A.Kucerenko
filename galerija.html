@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="lv">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Galerija - Tava Māja</title>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo"><img src="images/Logo.jpg" alt="Tava Māja"></div>
+        <nav class="menu">
+            <a href="index.html">Galvene</a>
+            <a href="#">Remonts</a>
+            <a href="#">Dizains</a>
+            <a href="#">Par mums</a>
+            <a href="galerija.html">Galerija</a>
+            <a href="#footer">Kontakti</a>
+        </nav>
+        <button class="login-button" id="openModal">Pieslēgties</button>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Galerija</h1>
+                <h2>Remonts, kas iedvesmo!</h2>
+                <button class="cta-button" onclick="document.getElementById('form').scrollIntoView({ behavior: 'smooth' })">
+                    IESNIEGT PIETEIKUMU
+                </button>
+            </div>
+        </section>
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <label>Jūsu lietotājvārds</label>
+                <input type="text" placeholder="user@site.com" />
+                <label>Jūsu parole</label>
+                <input type="password" placeholder="password" />
+                <button class="modal-login">Pieslēgties</button>
+                <button class="modal-register">Reģistrēties</button>
+            </div>
+        </div>
+
+        <div class="lightbox" id="lightbox">
+            <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+            <span class="lightbox-nav lightbox-prev" onclick="prevImage()">&#10094;</span>
+            <img id="lightbox-img" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="preview">
+            <span class="lightbox-nav lightbox-next" onclick="nextImage()">&#10095;</span>
+        </div>
+
+        <section class="gallery-grid">
+            <div class="gallery-item"><img src="images/b1.jpg" alt="Rudens iela">
+                <p><a href="#">Rudens iela</a></p>
+            </div>
+            <div class="gallery-item"><img src="images/b2.jpg" alt="Zentenes iela">
+                <p><a href="#">Zentenes iela</a></p>
+            </div>
+            <div class="gallery-item"><img src="images/b3.jpg" alt="Maldugunu iela">
+                <p><a href="#">Maldugunu iela</a></p>
+            </div>
+            <div class="gallery-item"><img src="images/b4.jpg" alt="Ziedu iela">
+                <p><a href="#">Ziedu iela</a></p>
+            </div>
+            <div class="gallery-item"><img src="images/b5.jpg" alt="Lejiņa iela">
+                <p><a href="#">Lejiņa iela</a></p>
+            </div>
+            <div class="gallery-item"><img src="images/b6.jpg" alt="Kipsalas iela">
+                <p><a href="#">Kipsalas iela</a></p>
+            </div>
+            <div class="gallery-item"><img src="images/b7.jpg" alt="Latgales iela">
+                <p><a href="#">Latgales iela</a></p>
+            </div>
+            <div class="gallery-item"><img src="images/b8.jpg" alt="Bikstu iela">
+                <p><a href="#">Bikstu iela</a></p>
+            </div>
+            <div class="gallery-item"><img src="images/b9.jpg" alt="Kojusalas iela">
+                <p><a href="#">Kojusalas iela</a></p>
+            </div>
+            <div class="gallery-item"><img src="images/b10.jpg" alt="Varavīksnes iela">
+                <p><a href="#">Varavīksnes iela</a></p>
+            </div>
+            <div class="gallery-item"><img src="images/b11.jpg" alt="Gaismas iela">
+                <p><a href="#">Gaismas iela</a></p>
+            </div>
+            <div class="gallery-item"><img src="images/b12.jpg" alt="Tallinas iela">
+                <p><a href="#">Tallinas iela</a></p>
+            </div>
+        </section>
+
+        <section class="form-section" id="form">
+            <h2>IESNIEGT PIETEIKUMU</h2>
+            <form id="applicationForm">
+                <label>Vārds</label>
+                <input type="text" placeholder="Oskars" />
+                <label>Epasts</label>
+                <input type="email" placeholder="user@site.com" />
+                <label>Tālrunis</label>
+                <input type="text" placeholder="200 200 20" />
+                <label>Informācija par objektu</label>
+                <textarea rows="4" placeholder="Lubanas iela 129, interese remonts"></textarea>
+                <button type="submit">NOSŪTĪT</button>
+            </form>
+        </section>
+    </main>
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="images/Logo.jpg" alt="Logo" />
+                <p>SIA Tavamaja<br>Reģ.Nr.00000000000</p>
+                <p>Lubanas 129, Rīga, Latvija<br>T. 200 200 20<br>info@tavamaja.lv</p>
+                <div class="footer-social">
+                    <img src="images/facebook.jpg" alt="Facebook">
+                    <img src="images/wht.jpg" alt="WhatsApp">
+                    <img src="images/you.jpg" alt="YouTube">
+                    <img src="images/insta.jpg" alt="Instagram">
+                </div>
+            </div>
+            <div>
+                <p><a href="index.html">Galvene</a></p>
+                <p><a href="#">Remonts</a></p>
+                <p><a href="#">Dizains</a></p>
+                <p><a href="#">Par mums</a></p>
+                <p><a href="galerija.html">Galerija</a></p>
+                <p><a href="#footer">Kontakti</a></p>
+                <p><a href="#">Konfidencialitātes politika</a></p>
+                <p><a href="#">Sīkdatņu izmantošanas noteikumi</a></p>
+            </div>
+            <div class="footer-map">
+                <img src="images/map.jpg" alt="Map" />
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2025 Website Design and Programming
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
